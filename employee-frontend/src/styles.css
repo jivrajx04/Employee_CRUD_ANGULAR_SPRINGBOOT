@@ -1,0 +1,42 @@
+/* src/styles.css (Global Styles) */
+
+/* Import Tailwind CSS from CDN directly */
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Apply base styles to html and body */
+html, body {
+  height: 100%; /* Ensures body takes full height for centering elements */
+  margin: 0; /* Removes default browser margin */
+  font-family: 'Inter', sans-serif; /* Apply the Inter font globally */
+  -webkit-font-smoothing: antialiased; /* Enhances text rendering */
+  -moz-osx-font-smoothing: grayscale; /* Enhances text rendering for Firefox */
+  background-color: #f0f2f5; /* Light grey background for the whole app */
+}
+
+/* Base styles for h1, h2, etc., if not overridden by Tailwind classes */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-gray-800; /* Apply a default text color for headings using Tailwind */
+}
+
+/* Optional: Custom scrollbar styling for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,15 @@
+<!-- src/app/not-found/not-found.html -->
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800 p-4">
+  <h1 class="text-6xl font-bold text-gray-700 mb-4">404</h1>
+  <p class="text-xl md:text-2xl mb-8 text-center">Page Not Found</p>
+  <p class="text-md text-gray-600 mb-8 text-center">
+    The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+  </p>
+  <!-- Link to navigate back to the employee list -->
+  <a
+    [routerLink]="['/employees']"
+    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+  >
+    Go to Employee List
+  </a>
+</div>
